@@ -7,7 +7,7 @@ namespace EcoEnergySolutions
 {
     public class SistemaHidroelectric: SistemaEnergia, ICalculEnergia
     {
-        public double CabalAigua { get; set; }
+        public double CabalAigua { get; set;}
         public double CalcEnergia() =>this.CabalAigua * 9.8 * 0.8;
         public void MostraInforme() => Console.WriteLine($"data: {this.Date} tipus: {this.Type} cabal d'aigua: {this.CabalAigua}");
         public bool ConfParametre() => this.CabalAigua >= 20.0;
